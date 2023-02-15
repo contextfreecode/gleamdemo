@@ -1,5 +1,5 @@
 defmodule Hi do
-  def hello do
-    "world"
+  def greeting(name) do
+    "Hello, #{name}!"
   end
 end
