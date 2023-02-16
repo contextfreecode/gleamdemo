@@ -4,5 +4,12 @@ pub fn main() {
   io.println(greeting("world"))
 }
 
-pub external fn greeting(name: String) -> String =
-  "Elixir.Hi" "greeting"
+if erlang {
+  pub external fn greeting(name: String) -> String =
+    "Elixir.Hi" "greeting"
+}
+
+if javascript {
+  pub external fn greeting(name: String) -> String =
+    "./hi.mjs" "greeting"
+}
